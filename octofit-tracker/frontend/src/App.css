@@ -1,0 +1,88 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-navbar {
+  background: #163b35;
+}
+
+.app-logo {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.app-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.app-shell main {
+  flex: 1;
+}
+
+.page-heading {
+  max-width: 48rem;
+}
+
+.eyebrow {
+  color: #28775e;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.record-card,
+.empty-state {
+  border: 1px solid #e1eae5;
+  box-shadow: 0 0.4rem 1.5rem rgba(28, 65, 54, 0.06);
+}
+
+.record-card {
+  border-radius: 1rem;
+}
+
+.record-card .card-body {
+  padding: 1.35rem;
+}
+
+.empty-state {
+  background: #fff;
+}
+
+.app-footer {
+  color: #61716c;
+  background: #eaf1ed;
+}
+
+@media (max-width: 767.98px) {
+  .app-navbar .container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .app-navbar .nav {
+    flex-wrap: wrap;
+  }
+
+  .app-navbar .nav-link {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.875rem;
+  }
+}
